@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <h2>This is for form practice</h2>
+    <form action="bakcend.java">
+        <label for="name">Name</label>
+        <div>
+            <input type="text" name="name" id="name">
+        </div>
+        <br>
+        <label for="roll">Roll</label>
+        <div>
+            <input type="text" name="roll" id="roll">
+        </div>
+        <br>
+        <label for="email">Email</label>
+        <div>
+            <input type="text" name="Email" id="email">
+        </div><br>
+        <label for="date">Date</label>
+        <div>
+             <input type="date" id="date"></input>
+        </div>
+
+        <br>
+        <label for="bonus">Bonus </label>
+        <div>
+            <input type="number" name="mybonus" id="bonus">
+        </div>
+        <div>
+            Gender:
+            <label for="male">Male </label>
+            <input type="radio" name="mygender" id="male">
+
+            <label for="female">Female </label>
+            <input type="radio" name="mygender" id="female">
+            <label for="other">Other </label>
+           <input type="radio" name="mygender" id="other">
+        </div>
+        <br>
+        <div>Are elegible: <input type="checkbox" name="myelegibilty"> </div>
+        <br>
+        <div>
+            Write about your self :<br> <textarea name="text" cols="30" rows="10"></textarea>
+        </div>
+
+        <div>
+            <label for="car">Car </label>
+            <select name="mycar" id="car">
+                <option value="ind">Indica</option>
+                <option value="swft" selected>swift</option>
+            </select>
+            
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="submit value">
+            <input type="reset" value="reset value">
+        </div>
+        
+
+    </form>
+
+</body>
+
+</html>
