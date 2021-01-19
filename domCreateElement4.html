@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #panels{
+    background-color:rgb(223, 137, 137);
+    height: 500px;
+    padding: 8px 8px 8px 8px;
+    margin: 0px 50px 0px 0px;   
+    overflow: scroll;
+}
+.greeting-element{
+    background-color:white;
+    display: inline-block;
+    height:150px;
+    width: 250px;
+    padding: 10px 15px 2px 13px;
+    margin: 12px 20px 19px 14px;
+    box-shadow:2px 2px 2px 7px whitesmoke;
+    font-size: 12px;
+}
+.greeting-element ul{
+    list-style: none;
+}
+.greeting-element li{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+    </style>
+</head>
+
+<body>
+    <div id="panels"></div>
+</body>
+<script type="text/javascript">
+    function createListItem(name) {
+        let li = document.createElement('li');
+        li.textContent = name;
+        return li;
+    }
+   
+        let greetingElement = document.createElement("div");
+        greetingElement.setAttribute("id", "child-panel");
+        greetingElement.setAttribute("class", "greeting-element");
+        document.getElementById("panels").appendChild(greetingElement);
+        let list = document.createElement("ul");
+        list.setAttribute("id", "list");
+        document.getElementById("child-panel").appendChild(list);
+        let greeting = document.getElementById("list");
+        
+        greeting.appendChild(createListItem('dafaoj5465dgkkshfd'));
+        greeting.appendChild(createListItem('Hello(greetings)'));
+        greeting.appendChild(createListItem('Parag(name)'));
+        greeting.appendChild(createListItem('15 min ago'));
+
+</script>
+
+</html>
