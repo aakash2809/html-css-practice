@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventListener2</title>
+</head>
+<style>
+    .form-popup {
+  display: none;
+  border: 0px solid lightcoral;
+ border-radius:2px ;
+}
+.form-container{
+  border: 3px solid gray;
+ border-radius:2px ;
+ width:300px;
+ margin-left: 30px;
+}
+.form-container .cancel {
+  background-color: red;
+}
+
+
+</style>
+<body>
+    <pre id="add" onclick="addnewgreeting()">add data</pre>
+    <div class="form-popup" id="myForm">
+        <form action="" class="form-container">
+          <h3>Add Greeting</h3>
+          <table>
+            <tr>
+            <td><b>Name</b></td>
+            <td> <input type="text" placeholder="Enter name" name="name" required></td>
+            </tr>
+            <tr>
+                <td><b>Message</b></td>
+                <td><input type="text" placeholder="Enter  message" name="msg" required></td>
+            </tr>
+            <tr>
+                <td> <button type="submit" class="btn">Save</button></td>
+                <td><button type="button" class="btn cancel" onclick="closeForm()">Close</button></td>
+            </tr>
+         
+          
+        </table>
+        </form>
+      </div>
+      
+</body>
+
+<script>
+    addnewgreeting = () => {
+        document.getElementById("myForm").style.display = "block";
+    }
+    function closeForm() {
+  document.getElementById("myForm").style.display = "none";
+}
+</script>
+</html>

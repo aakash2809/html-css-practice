@@ -1,12 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <Style>
+        .greeting-element {
+            background-color: white;
+            display: inline-block;
+            height: 150px;
+            width: 250px;
+            padding: 10px 15px 2px 13px;
+            margin: 12px 20px 19px 14px;
+            box-shadow: 2px 2px 2px 7px whitesmoke;
+            font-size: 12px;
+
+        }
+
+        .panels {
+            background-color: white;
+            height: 500px;
+            padding: 8px 8px 8px 8px;
+            margin: 0px 50px 0px 0px;
+            overflow: scroll;
+        }
+    </Style>
 </head>
+
 <body>
-    welcome
+    <div class="panels">
+        <div id="app"></div>
+    </div>
 </body>
 <script src="/fetchApi.js"></script>
+
 </html>

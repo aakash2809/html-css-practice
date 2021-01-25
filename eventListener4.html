@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eventListener2</title>
+</head>
+<style>
+    .form-popup {
+        display: none;
+        border: 0px solid lightcoral;
+        border-radius: 2px;
+    }
+
+    .form-container {
+        border: 3px solid gray;
+        border-radius: 2px;
+        width: 300px;
+        margin-left: 30px;
+        align-items: center;
+    }
+
+    .form-container .cancel {
+        background-color: red;
+    }
+</style>
+
+<body>
+    <pre onclick="deleteGreeting()">Delete data</pre>
+    <div class="form-popup" id="delete-greeting-form">
+        <form action="" class="form-container">
+            <h3>Delete Greeting</h3>
+            <table>
+                <tr>
+                    <td><b>Greeting Id</b></td>
+                <tr>
+                <tr>
+                    <td><input type="text" placeholder="Enter Greeing Id" name="id" required></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+</body>
+
+<script>
+    deleteGreeting = () => {
+        document.getElementById("delete-greeting-form").style.display = "block";
+    }
+    function closeForm() {
+        document.getElementById("delete-greeting-form").style.display = "none";
+    }
+</script>
+
+</html>
